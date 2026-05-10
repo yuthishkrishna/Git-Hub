@@ -48,11 +48,10 @@ def view_settings(test_settings):
     if not test_settings:
         return "No settings available."
 
-    formatted_settings = ""
+    formatted_settings = {}
     
     for key, value in test_settings.items():
-        formatted_settings += f"{key.capitalize()}: {value}\n"
-    
+        formatted_settings[key.capitalize()] = value
     return formatted_settings
 
 print(view_settings(test_settings))
