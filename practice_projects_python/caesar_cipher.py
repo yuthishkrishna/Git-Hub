@@ -22,7 +22,18 @@ def encrypt(text, shift):
 def decrypt(text, shift):
     return caesar(text, shift, encrypt=False)
 
+ed=input("Do you want to encrypt or decrypt? (e/d): ").lower()
+if ed == 'e':
+    string=input("Enter the string to encrypt: ")
+    shift=int(input("Enter the shift value (1-25): "))
+    encrypted_text = encrypt(string, shift)
+    print(encrypted_text)
+elif ed == 'd':
+    string=input("Enter the string to decrypt: ")
+    shift=int(input("Enter the shift value (1-25): "))
+    decrypted_text = decrypt(string, shift)
+    print(decrypted_text)
 string=input("Enter the string to encrypt: ")
 shift=int(input("Enter the shift value (1-25): "))
 encrypted_text = encrypt(string, shift)
-print(encrypted_text)
+print(encrypted_text )
