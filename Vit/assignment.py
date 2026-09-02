@@ -6,27 +6,20 @@ def number_of_odd_numbers(n):
     if n < 0:
         raise ValueError("Input must be a non-negative integer.")
     return (n + 1) // 2
-a = input("Enter a number: ")
-if isinstance(a, int):
-    a = int(a)
-    even_count = number_of_even_numbers(a)
-    odd_count = number_of_odd_numbers(a)
-    print(f"Number of even numbers: {even_count}")
-    print(f"Number of odd numbers: {odd_count}")
-else:
-    print("Please enter a valid integer.")'''
+a = int(input("Enter a number: "))
+even_count = number_of_even_numbers(a)
+odd_count = number_of_odd_numbers(a)
+print(f"Number of even numbers: {even_count}")
+print(f"Number of odd numbers: {odd_count}")'''
+
 
 '''def sum_of_numbers(n):
     if n < 0:
         raise ValueError("Input must be a non-negative integer.")
     return n * (n + 1) // 2
-a = input("Enter a number: ")
-if isinstance(a, int):
-    a = int(a)
-    total_sum = sum_of_numbers(a)
-    print(f"Sum of numbers from 1 to {a}: {total_sum}")
-else:
-    print("Please enter a valid integer.")'''
+a = int(input("Enter a number: "))
+total_sum = sum_of_numbers(a)
+print(f"Sum of numbers from 1 to {a}: {total_sum}")'''
 
 
 '''def sum_of_even_numbers(n):
@@ -37,13 +30,9 @@ else:
         if i % 2 == 0:
             s += i
     return s
-a = input("Enter a number: ")
-if isinstance(a, int):
-    a = int(a)
-    even_sum = sum_of_even_numbers(a)
-    print(f"Sum of even numbers from 1 to {a}: {even_sum}")
-else:
-    print("Please enter a valid integer.")'''
+a = int(input("Enter a number: "))
+even_sum = sum_of_even_numbers(a)
+print(f"Sum of even numbers from 1 to {a}: {even_sum}")'''
 
 
 '''def factorial_of_number(n):
@@ -55,13 +44,9 @@ else:
     for i in range(2, n + 1):
         result *= i
     return result
-a = input("Enter a number: ")
-if isinstance(a, int):
-    a = int(a)
-    factorial_result = factorial_of_number(a)
-    print(f"Factorial of {a}: {factorial_result}")
-else:
-    print("Please enter a valid integer.")'''
+a = int(input("Enter a number: "))
+factorial_result = factorial_of_number(a)
+print(f"Factorial of {a}: {factorial_result}")'''
 
 
 '''def fibonacci_series(n):
