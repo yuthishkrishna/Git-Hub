@@ -29,5 +29,5 @@ def hanoi_solver(disks):
     if disks > 0:
         return_string += move_the_tower(one, three, two,disks )
         return return_string.rstrip("\n")
-
-print(hanoi_solver(2))
+a= int(input("Enter the number of disks: "))
+print(hanoi_solver(a))

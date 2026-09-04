@@ -52,7 +52,6 @@ print(f"Factorial of {a}: {factorial_result}")'''
 '''def fibonacci_series(n):
     if n < 0:
         raise ValueError("Input must be a non-negative integer.")
-    series = 1
     a, b = 0, 1
     for i in range(n):
         series = a
