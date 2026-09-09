@@ -55,8 +55,7 @@ print(f"Factorial of {a}: {factorial_result}")'''
     a, b = 0, 1
     for i in range(n):
         series = a
-        a = b
-        b = a + b        
+        a, b = b, a + b    
         print(series)   
 a = int(input("Enter a number: "))   
 fibonacci_series(a)'''
